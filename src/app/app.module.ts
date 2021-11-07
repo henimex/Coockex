@@ -9,6 +9,8 @@ import { RecipeListComponent } from './Componenets/recipes/recipe-list/recipe-li
 import { RecipeItemComponent } from './Componenets/recipes/recipe-list/recipe-item/recipe-item.component';
 import { ShoppingListComponent } from './Componenets/shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './Componenets/shopping-list/shopping-edit/shopping-edit.component';
+import { StyleTestsComponent } from './Componenets/style-tests/style-tests.component';
+import { HoversComponent } from './DesignTests/hovers/hovers.component';
 
 
 
@@ -22,6 +24,8 @@ import { ShoppingEditComponent } from './Componenets/shopping-list/shopping-edit
     RecipeItemComponent,
     ShoppingListComponent,
     ShoppingEditComponent,
+    StyleTestsComponent,
+    HoversComponent,
   ],
   imports: [
     BrowserModule

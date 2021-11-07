@@ -1,2 +1,4 @@
 ng config schematics.@schematics/angular:component.skipTests true
 "node_modules/bootstrap/dist/css/bootstrap.min.css",
+https://app.degoo.com/
+login with google henimex acc
