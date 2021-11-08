@@ -9,6 +9,10 @@ import { RecipeListComponent } from './Componenets/recipes/recipe-list/recipe-li
 import { RecipeItemComponent } from './Componenets/recipes/recipe-list/recipe-item/recipe-item.component';
 import { ShoppingListComponent } from './Componenets/shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './Componenets/shopping-list/shopping-edit/shopping-edit.component';
+import { CockpitComponent } from './Componenets/Bindings/cockpit/cockpit.component';
+import { ServerElementComponent } from './Componenets/Bindings/server-element/server-element.component';
+import {FormsModule} from "@angular/forms";
+import { ShowcaseComponent } from './Componenets/Bindings/showcase/showcase.component';
 
 
 
@@ -22,9 +26,13 @@ import { ShoppingEditComponent } from './Componenets/shopping-list/shopping-edit
     RecipeItemComponent,
     ShoppingListComponent,
     ShoppingEditComponent,
+    CockpitComponent,
+    ServerElementComponent,
+    ShowcaseComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
