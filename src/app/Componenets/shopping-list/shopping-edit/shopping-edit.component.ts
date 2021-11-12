@@ -1,4 +1,4 @@
-import {Component, ElementRef, EventEmitter, OnInit, ViewChild} from '@angular/core';
+import {Component, ElementRef, EventEmitter, OnInit, Output, ViewChild} from '@angular/core';
 import {IngredientModel} from "../../../Models/ingredient.model";
 
 @Component({
@@ -9,7 +9,7 @@ import {IngredientModel} from "../../../Models/ingredient.model";
 export class ShoppingEditComponent implements OnInit {
   @ViewChild('nameInput') nameInput: ElementRef
   @ViewChild('amountInput') amountInput: ElementRef
-  ingredientAdded = new EventEmitter<IngredientModel>();
+  @Output() ingredientAdded = new EventEmitter<IngredientModel>();
 
   constructor() {
   }
@@ -18,10 +18,11 @@ export class ShoppingEditComponent implements OnInit {
   }
 
   onAddItem() {
-  const ingName = this.nameInput.nativeElement.value;
-  const amountName = this.amountInput.nativeElement.value;
-
-  //this.ingredientAdded.emit(new Ingredi)
+    let newIngredient: IngredientModel = {
+      name: this.nameInput.nativeElement.value,
+      amount: this.amountInput.nativeElement.value
+    }
+    this.ingredientAdded.emit(newIngredient);
   }
 
 }

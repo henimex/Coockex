@@ -16,14 +16,19 @@ export class ShoppingListComponent implements OnInit {
     this.createIngredients();
   }
 
-  createIngredients(){
+  createIngredients() {
     this.ingredients = [
-      { name:"Apples", amount:5},
-      { name:"Tomatoes", amount:1},
-      { name:"Flour", amount:2},
-      { name:"Eggs", amount:4},
-      { name:"Potatoes", amount:6},
+      {name: "Apples", amount: 5},
+      {name: "Tomatoes", amount: 1},
+      {name: "Flour", amount: 2},
+      {name: "Eggs", amount: 4},
+      {name: "Potatoes", amount: 6},
     ]
+  }
+
+  onIngredientAdded(ingredient: IngredientModel) {
+
+    this.ingredients.push(ingredient);
   }
 
 }
