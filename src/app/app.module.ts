@@ -13,6 +13,7 @@ import { CockpitComponent } from './Componenets/Bindings/cockpit/cockpit.compone
 import { ServerElementComponent } from './Componenets/Bindings/server-element/server-element.component';
 import {FormsModule} from "@angular/forms";
 import { ShowcaseComponent } from './Componenets/Bindings/showcase/showcase.component';
+import { DropdownDirective } from './Core/dropdown.directive';
 
 
 
@@ -29,6 +30,7 @@ import { ShowcaseComponent } from './Componenets/Bindings/showcase/showcase.comp
     CockpitComponent,
     ServerElementComponent,
     ShowcaseComponent,
+    DropdownDirective,
   ],
   imports: [
     BrowserModule,
