@@ -14,6 +14,9 @@ import { ServerElementComponent } from './Componenets/Bindings/server-element/se
 import {FormsModule} from "@angular/forms";
 import { ShowcaseComponent } from './Componenets/Bindings/showcase/showcase.component';
 import { DropdownDirective } from './Core/dropdown.directive';
+import {RecipeService} from "./Services/recipe.service";
+import {ShoppingListService} from "./Services/shopping-list.service";
+
 
 
 
@@ -30,13 +33,13 @@ import { DropdownDirective } from './Core/dropdown.directive';
     CockpitComponent,
     ServerElementComponent,
     ShowcaseComponent,
-    DropdownDirective,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [RecipeService,ShoppingListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
